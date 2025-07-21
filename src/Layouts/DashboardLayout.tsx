@@ -8,7 +8,7 @@ const DashboardLayout = () => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("sidebar-collapsed");
+    const saved: string | null = localStorage.getItem("sidebar-collapsed");
     if (saved !== null) {
       setIsCollapsed(JSON.parse(saved));
     }
