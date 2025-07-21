@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../Components/Sidebar";
 import { Menu } from "lucide-react";
 
 const DashboardLayout = () => {
