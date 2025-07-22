@@ -13,8 +13,14 @@ type SidebarProps = {
   mobile: boolean;
 };
 
+type Link = {
+  to: string;
+  name: string;
+  icon: JSX.Element;
+}
+
 const Sidebar: React.FC<SidebarProps> = ({ collapsed, onToggle, mobile }) => {
-  const links = [
+  const links: Link[] = [
     { to: "/dashboard", name: "Home", icon: <Home size={20} /> },
     { to: "/dashboard/users", name: "Users", icon: <Users size={20} /> },
     { to: "/dashboard/settings", name: "Settings", icon: <Settings size={20} /> },
