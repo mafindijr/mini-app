@@ -7,7 +7,7 @@ import Settings from "./pages/Settings";
 function App() {
   return (
     <Routes>
-      <Route path="/dashboard" element={<DashboardLayout />}>
+      <Route path="/" element={<DashboardLayout />}>
         <Route index element={<DashboardHome />} />
         <Route path="users" element={<Users />} />
         <Route path="settings" element={<Settings />} />
